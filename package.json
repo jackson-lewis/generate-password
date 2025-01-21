@@ -1,0 +1,23 @@
+{
+  "name": "@jackson-lewis/generate-password",
+  "version": "1.0.0",
+  "scripts": {
+    "watch": "tsc --watch",
+    "generate-password": "node ./dist/bin/generate-password.js"
+  },
+  "type": "module",
+  "author": "Jackson Lewis",
+  "license": "ISC",
+  "bin": {
+    "generate-password": "dist/bin/generate-password.js"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "@jackson-lewis/generate-password": "^1.0.0",
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0"
+  }
+}
