@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
 import { program } from 'commander'
-import { generate } from '../generate'
 import chalk from 'chalk'
-import { copyToClipboard } from '../clipboard'
+import { generate } from '@/generate'
+import { copyToClipboard } from '@/clipboard'
 
 program
   .option('--length [len]', 'Length of the password', '8')

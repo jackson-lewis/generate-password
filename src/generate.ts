@@ -1,10 +1,18 @@
 export function generate(
-  length: number,
+  length: number = 16,
   alphaLower: boolean = true,
   alphaUpper: boolean = true,
   number: boolean = true,
   special: boolean = false
 ) {
+  if (length < 4) {
+    length = 4
+  }
+
+  if (length > 50) {
+    length = 50
+  }
+
   const alphaCharset = 'abcdefghijklmnopqrstuvwxyz'
   const numberCharset = '0123456789'
   const specialCharset = '!@#$%^&*()_+[]{}|;:,.<>?'
