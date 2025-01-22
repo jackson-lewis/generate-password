@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "watch": "tsc --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "generate-password": "node ./dist/bin/generate-password.js"
   },
   "type": "module",
