@@ -2,7 +2,7 @@
 
 import { program } from 'commander'
 import chalk from 'chalk'
-import { generate } from '@/generate'
+import generate from '@/generate'
 import { copyToClipboard } from '@/clipboard'
 
 program
