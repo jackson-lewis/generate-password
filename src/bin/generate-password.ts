@@ -4,9 +4,10 @@ import { program } from 'commander'
 import chalk from 'chalk'
 import generate from '@/generate'
 import { copyToClipboard } from '@/clipboard'
+import { DEFAULT_LENGTH } from '@/consts'
 
 program
-  .option('--length [len]', 'Length of the password', '8')
+  .option('--length [len]', 'Length of the password', `${DEFAULT_LENGTH}`)
   .option('--lowercase', 'Use lowercase characters', true)
   .option('--uppercase', 'Use uppercase characters', true)
   .option('--numeric', 'Use numeric characters', true)

@@ -1,3 +1,4 @@
+import { DEFAULT_LENGTH } from './consts'
 import { Charsets } from './types'
 
 export class PasswordGenerator {
@@ -10,7 +11,7 @@ export class PasswordGenerator {
   usedCharsets: number[] = []
 
   constructor(
-    length: number = 16,
+    length: number = DEFAULT_LENGTH,
     alphaLower: boolean = true,
     alphaUpper: boolean = true,
     number: boolean = true,

@@ -1,9 +1,10 @@
+import { DEFAULT_LENGTH } from '@/consts'
 import generate, { PasswordGenerator } from '@/generate'
 
 describe('Password length', () => {
   it('should generate a password with the default 16 characters', () => {
-    const generator = new PasswordGenerator(16)
-    expect(generator.length).toEqual(16)
+    const generator = new PasswordGenerator()
+    expect(generator.length).toEqual(DEFAULT_LENGTH)
   })
 
   it('should generate a password with 12 characters', () => {
