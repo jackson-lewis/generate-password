@@ -6,7 +6,7 @@
     "build": "tsc",
     "test": "jest",
     "test:watch": "jest --watch",
-    "generate-password": "node ./dist/bin/generate-password.js"
+    "generate-password": "node ./dist/src/bin/generate-password.js"
   },
   "type": "module",
   "author": "Jackson Lewis",

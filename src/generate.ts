@@ -1,4 +1,4 @@
-import { DEFAULT_LENGTH } from './consts'
+import { DEFAULT_LENGTH } from './consts.js'
 import { Charsets } from './types'
 
 export class PasswordGenerator {

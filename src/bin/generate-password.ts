@@ -2,9 +2,9 @@
 
 import { program } from 'commander'
 import chalk from 'chalk'
-import generate from '@/generate'
-import { copyToClipboard } from '@/clipboard'
-import { DEFAULT_LENGTH } from '@/consts'
+import generate from '../generate.js'
+import { copyToClipboard } from '../clipboard.js'
+import { DEFAULT_LENGTH } from '../consts.js'
 
 program
   .option('--length [len]', 'Length of the password', `${DEFAULT_LENGTH}`)
